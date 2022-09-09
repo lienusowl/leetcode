@@ -1,8 +1,10 @@
+"use strict";
+exports.__esModule = true;
 function twoSum(nums, target) {
     var map = new Map();
     for (var i = 0; i < nums.length; i++) {
         if (map.has(target - nums[i])) {
-            return [map.get(target - nums[i]), i,];
+            return [map.get(target - nums[i]), i];
         }
         map.set(nums[i], i);
     }
